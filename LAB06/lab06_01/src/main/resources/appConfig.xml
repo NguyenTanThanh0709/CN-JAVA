@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+                http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="product1" class="lab06_01.Product">
+
+		<property name="name" value="Product1" />
+
+	</bean>
+
+	<bean id="product2" class="lab06_01.Product">
+		<constructor-arg ref = "product1"/>
+
+	</bean>
+
+	<bean id="product3" class="lab06_01.Product"
+		scope="singleton">
+<property name="name" value="Product 3" />
+
+	</bean>
+</beans>
