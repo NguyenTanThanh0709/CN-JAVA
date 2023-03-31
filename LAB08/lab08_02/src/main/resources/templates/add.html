@@ -98,7 +98,7 @@ error: function (error) {
 
 function updateNew(data, id) {
 $.ajax({
-url: '/employee/update/' + id,
+url: '/employee/edit/' + id,
 type: 'PUT',
 contentType: 'application/json',
 data: JSON.stringify(data),

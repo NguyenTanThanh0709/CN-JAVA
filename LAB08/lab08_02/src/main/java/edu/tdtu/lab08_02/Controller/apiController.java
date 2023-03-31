@@ -16,7 +16,7 @@ public class apiController {
         return  employee;
     }
 
-    @PutMapping("/employee/update/{id}")
+    @PutMapping("/employee/edit/{id}")
     public Employee employeeUpdate(@PathVariable("id") long id, @RequestBody Employee employee){
         employee.setId(id);
         employeeService.update(employee);
